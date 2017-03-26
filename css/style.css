@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+
+input[type="number"] {
+  position: relative;
+  font-size: 0.9em;
+}
+
+.input-group input {
+  border-radius: 4px 0 0 4px;
+  padding-right: 4px;
+}
+
+.append {
+  color: #777;
+  font-size: 0.9em;
+  padding: 10px;
+  margin-left: -5px;
+  border: 1px solid #ccc;
+  border-radius: 0 4px 4px 0;
+  background: #f9f9f9;
+}
+
+#tempo {
+  width: 75px;
+}
+
+.matrix-container {
+  overflow: auto;
+  margin-bottom: -24px;
+  padding-bottom: 24px;
+  max-height: 85vh;
+}
+
+.matrix-outer {
+  overflow: hidden;
+}
+
+#matrix {
+  border-top: 2px solid rgba(221, 238, 255, 0.15);
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.col {
+  display: inline-block;
+  padding: 2px;
+  transition: all 0.15s;
+}
+
+.col:nth-child(odd) {
+  background: #dff6ff;
+}
+
+.col:hover {
+  background: rgba(255,190,0,0.36);
+}
+
+
+.col[data-active="true"] {
+  background: rgba(255,0,0,0.3);
+}
+
+.row {
+  width: 40px;
+  height: 25px;
+  margin: 8px 4px;
+  background: rgba(0,0,0,0.07);
+}
+
+.row[data-note="C"] {
+  margin-top: 20px;
+}
+
+.row[data-active="true"] {
+  background: rgba(220,60,0,0.7);
+}
